@@ -28,5 +28,14 @@ resultadoMayus = map(mayus, palabras)
 
 #print(list(resultadoMayus))
 
+#Ejercico 4
 
+def desendente(x):
+    return sorted(x, reverse=True)
+
+lista_num3 = [10,9,8,4,3,2,1,5,6,7]
+
+result_desent = desendente(lista_num3)
+
+#print(list(result_desent))
 
