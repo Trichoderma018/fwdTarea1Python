@@ -20,11 +20,13 @@ resultado = map(por_3, lista_num2)
 
 #Ejercico 3
 def mayus(x):
-    return x.upper
-
-lista_num2 = [1,2,3,4,5,6,7,8,9,10]
-
-resultado = map(por_3, lista_num2)
+    return x.upper()
 
 palabras = ['casa', 'mata', 'tapa']
+
+resultadoMayus = map(mayus, palabras)
+
+#print(list(resultadoMayus))
+
+
 
