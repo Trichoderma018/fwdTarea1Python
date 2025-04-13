@@ -56,5 +56,37 @@ diccionario = {
 # Creamos un nuevo diccionario aplicando la función redondear a cada valor
 resul_redondeado = {clave: redondear(valor) for clave, valor in diccionario.items()}
 
-print(resul_redondeado)
+#print(resul_redondeado)
 
+#Ejercico 6
+
+palabras2 = ['raton', 'catarata', 'astralopitecus']
+
+def contarPalabra(x):
+    return len(x)
+
+contando = list(map(contarPalabra, palabras2))
+
+#print(contando)
+
+#Ejercico 7
+
+palabras3 = ['casa', 'mata', 'tapa', 'raton', 'catarata', 'astralopitecus']
+
+def cuatroLetras (x):
+    return len(x) >= 5
+
+filtrar = list(filter(cuatroLetras, palabras3))
+
+#print(filtrar)
+
+#Ejercico 8
+
+texto = ["1","2","3"]
+
+def entero(x):
+    return int(x)
+
+convertir = list(map(entero, texto))
+
+#print(convertir)
