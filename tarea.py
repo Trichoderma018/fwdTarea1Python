@@ -90,3 +90,55 @@ def entero(x):
 convertir = list(map(entero, texto))
 
 #print(convertir)
+
+#Ejercicio 9
+
+lista_num4 = [-10,9,-8,4,-3,2,-1,5,-6,7]
+
+def positivos (x):
+    return (x) >= 0
+
+filtrar = list(filter(positivos, lista_num4))
+
+#print(filtrar)
+
+#Ejercicio 10
+
+listaTupla = [("Juan", 25), ("Ana", 20), ("Luis", 30)]
+
+def segundoValor(x):
+    return x[1]
+
+ordenar = sorted(listaTupla, key=segundoValor)
+
+#print(ordenar)
+
+#Ejercicio 11
+
+celsius = [50, 60, 70, 80, 90, 90]
+
+def convertir(x):
+    return ((x * 9/5)+ 32)
+
+fahrenheit = list(map(convertir, celsius))
+
+#print(f"Los grados fahrenheit son {fahrenheit}")
+
+#Ejercicio 12
+
+lista_num5 = [4.3, 5.7, 8.2]
+
+def redondear(x):
+    return round(x)
+
+proceso = list(map(redondear, lista_num5))
+
+#print(proceso)
+
+#Ejercicio 13
+
+lista_num6 = [5, 3, 5, 2, 3, 1]
+
+resultado = sorted(set(lista_num6))
+
+print(resultado)
