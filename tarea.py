@@ -39,3 +39,22 @@ result_desent = desendente(lista_num3)
 
 #print(list(result_desent))
 
+#Ejercico 5
+
+def redondear(x):
+    return round(x)
+
+diccionario = {
+    "num1": 1.20,
+    "num2": 4.55,
+    "num3": 13.80,
+    "num4": 27.94,
+    "num5": 53.79,
+    "num6": 99.99,
+}
+
+# Creamos un nuevo diccionario aplicando la función redondear a cada valor
+resul_redondeado = {clave: redondear(valor) for clave, valor in diccionario.items()}
+
+print(resul_redondeado)
+
