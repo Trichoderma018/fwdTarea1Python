@@ -3,15 +3,12 @@ lista_num = [1,2,3,4,5,6,7,8,9,10]
 
 par = filter(lambda x: x % 2 == 0, lista_num)
 
-print(list(par))
+#print(list(par))
 
 #Ejercicio 2
-def por_3(x):
-    return x * 3
-
 lista_num2 = [1,2,3,4,5,6,7,8,9,10]
 
-resultado = map(por_3, lista_num2)
+resultado = map(lambda x: x * 3, lista_num2)
 
 #print(list(resultado))
 
