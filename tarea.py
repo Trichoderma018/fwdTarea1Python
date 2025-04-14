@@ -1,12 +1,9 @@
 #Ejercico 1
 lista_num = [1,2,3,4,5,6,7,8,9,10]
 
-def es_par(lista_num):
-    return lista_num % 2 == 0
+par = filter(lambda x: x % 2 == 0, lista_num)
 
-pares = filter(es_par, lista_num)
-
-#print(list(pares))
+print(list(par))
 
 #Ejercicio 2
 def por_3(x):
@@ -141,4 +138,4 @@ lista_num6 = [5, 3, 5, 2, 3, 1]
 
 resultado = sorted(set(lista_num6))
 
-print(resultado)
+#print(resultado)
