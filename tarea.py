@@ -111,10 +111,7 @@ ordenar = sorted(listaTupla, key=segundoValor)
 
 celsius = [50, 60, 70, 80, 90, 90]
 
-def convertir(x):
-    return ((x * 9/5)+ 32)
-
-fahrenheit = list(map(convertir, celsius))
+fahrenheit = list(map(lambda x: ((x * 9/5)+ 32), celsius))
 
 #print(f"Los grados fahrenheit son {fahrenheit}")
 
@@ -122,10 +119,7 @@ fahrenheit = list(map(convertir, celsius))
 
 lista_num5 = [4.3, 5.7, 8.2]
 
-def redondear(x):
-    return round(x)
-
-proceso = list(map(redondear, lista_num5))
+proceso = list(map(lambda x: round(x) , lista_num5))
 
 #print(proceso)
 
